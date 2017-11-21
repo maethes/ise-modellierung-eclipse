@@ -1,0 +1,8 @@
+2017-11-21 19:31:10,581 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1923037ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-11-21 19:31:10,824 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.4.5.v20170502
+2017-11-21 19:31:10,859 [Start Help Server] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2017-11-21 19:31:10,859 [Start Help Server] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2017-11-21 19:31:10,862 [Start Help Server] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2017-11-21 19:31:10,910 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6cb9a6c6{/help,null,AVAILABLE}
+2017-11-21 19:31:10,936 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@877713c{HTTP/1.1,[http/1.1]}{127.0.0.1:45855}
+2017-11-21 19:31:10,937 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1923398ms

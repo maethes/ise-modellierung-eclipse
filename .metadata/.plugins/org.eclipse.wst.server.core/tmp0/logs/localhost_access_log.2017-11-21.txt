@@ -1,0 +1,6 @@
+127.0.0.1 - - [21/Nov/2017:19:04:06 +0100] "GET / HTTP/1.1" 404 1069
+127.0.0.1 - - [21/Nov/2017:19:04:07 +0100] "POST /BachelorSOAP/services/AdminService HTTP/1.0" 200 291
+127.0.0.1 - - [21/Nov/2017:19:04:07 +0100] "POST /BachelorSOAP/services/AdminService HTTP/1.0" 200 4184
+0:0:0:0:0:0:0:1 - - [21/Nov/2017:19:05:26 +0100] "GET /BachelorSOAP/services/ApprovalService HTTP/1.1" 200 136
+127.0.0.1 - - [21/Nov/2017:19:23:39 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 200 388
+127.0.0.1 - - [21/Nov/2017:19:25:00 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 200 387
