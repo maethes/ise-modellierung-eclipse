@@ -1,0 +1,16 @@
+127.0.0.1 - - [23/Nov/2017:21:48:09 +0100] "GET / HTTP/1.1" 404 1069
+0:0:0:0:0:0:0:1 - - [23/Nov/2017:21:48:14 +0100] "GET /favicon.ico HTTP/1.1" 404 1080
+0:0:0:0:0:0:0:1 - - [23/Nov/2017:21:48:16 +0100] "GET /BachelorSOAP/services/ApprovalService HTTP/1.1" 200 136
+127.0.0.1 - - [23/Nov/2017:21:49:24 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 500 505
+0:0:0:0:0:0:0:1 - - [23/Nov/2017:21:49:45 +0100] "GET /BachelorSOAP/services/ApprovalService HTTP/1.1" 200 136
+127.0.0.1 - - [23/Nov/2017:21:53:40 +0100] "GET / HTTP/1.1" 404 1069
+127.0.0.1 - - [23/Nov/2017:21:54:14 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 500 505
+0:0:0:0:0:0:0:1 - - [23/Nov/2017:21:54:36 +0100] "GET /BachelorSOAP/services/ApprovalService HTTP/1.1" 200 136
+127.0.0.1 - - [23/Nov/2017:21:58:14 +0100] "GET / HTTP/1.1" 404 1069
+127.0.0.1 - - [23/Nov/2017:21:59:04 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 500 505
+127.0.0.1 - - [23/Nov/2017:22:00:46 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 200 387
+127.0.0.1 - - [23/Nov/2017:22:14:37 +0100] "GET / HTTP/1.1" 404 1069
+127.0.0.1 - - [23/Nov/2017:22:15:12 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 500 505
+127.0.0.1 - - [23/Nov/2017:22:18:27 +0100] "GET / HTTP/1.1" 404 1069
+127.0.0.1 - - [23/Nov/2017:22:18:40 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 200 388
+127.0.0.1 - - [23/Nov/2017:22:19:16 +0100] "POST /BachelorSOAP/services/ApprovalService?wsdl HTTP/1.1" 200 387

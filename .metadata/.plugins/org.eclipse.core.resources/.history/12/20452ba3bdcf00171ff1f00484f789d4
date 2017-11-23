@@ -1,0 +1,8 @@
+package Bachelor;
+
+public class ApprovalServiceImpl {
+	public boolean isApproved(long studentId) {
+		
+		return true;
+	}
+}

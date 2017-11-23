@@ -1,0 +1,7 @@
+public class ApprovalService {
+	public boolean isApproved(long studentId) {
+		SqlProvider sql = new SqlProvider();
+		int countOfExams = sql.LoadCountOfExams(studentId);
+		return countOfExams > 20;
+	}	
+}

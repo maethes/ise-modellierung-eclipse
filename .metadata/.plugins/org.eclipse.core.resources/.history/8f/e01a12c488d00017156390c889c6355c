@@ -1,0 +1,69 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class SqlProvider {
+	public long LoadCountOfExams(long studentId) {
+		String sql = "select count(grades.id)\n" + 
+				"from written_exam grades\n" + 
+				"inner join subject on subject.id = grades.subject_id\n" + 
+				"where grades.student_id = " + studentId;
+		ResultSet resultSet = ExecSql(sql);
+		long countOfExams = 0;
+		if (resultSet != null) {
+			try {
+				while (resultSet.next()) {
+					countOfExams = resultSet.getLong(0);
+		        }
+			}
+			catch (SQLException ex) {
+			    // handle any errors
+			    System.out.println("SQLException: " + ex.getMessage());
+			    System.out.println("SQLState: " + ex.getSQLState());
+			    System.out.println("VendorError: " + ex.getErrorCode());
+			}
+			finally {
+				try {
+					resultSet.close();
+				} catch (SQLException sqlEx) { } // ignore
+				resultSet = null;
+			}
+		}
+		return countOfExams;
+	}
+	
+	public ResultSet ExecSql(String sql) {	
+		Connection connection = null;
+		Statement statement = null;
+		ResultSet resultSet = null;
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			connection = DriverManager.getConnection("jdbc:mysql://localhost/gpm_server1?user=root&password=gpm17");
+			statement = connection.createStatement();
+			System.out.println(sql);
+		    if (statement.execute(sql)) {
+		    	resultSet = statement.getResultSet();
+		    }
+		} catch (SQLException ex) {
+		    // handle any errors
+		    System.out.println("SQLException: " + ex.getMessage());
+		    System.out.println("SQLState: " + ex.getSQLState());
+		    System.out.println("VendorError: " + ex.getErrorCode());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		finally {
+		    if (statement != null) {
+		        try {
+		        	statement.close();
+		        } catch (SQLException sqlEx) { } // ignore
+		        statement = null;
+		    }
+		}
+		return resultSet;
+	}
+}

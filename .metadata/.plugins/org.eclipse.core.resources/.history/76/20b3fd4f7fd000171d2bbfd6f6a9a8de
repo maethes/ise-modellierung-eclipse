@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class ApprovalService {
+	public boolean isApproved(long studentId) {
+		SqlProvider sql = new SqlProvider();
+		ArrayList<Double> grades = sql.LoadGrades(studentId);
+		for (int i = 0; i < grades.size(); ++i) {
+			
+		}
+		return false;
+	}	
+}
